@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>目录</h1>
+    <a href="#one">列表</a>
+    <dl>
+        <dt><a href="#two">表单</a></dt>
+        <dd><a href="#three">input</a></dd>
+        <dd><a href="#four">lable</a></dd>
+        <dd><a href="#five">select</a></dd>
+        <dd><a href="#six">文本域 textarea</a></dd>
+    </dl>
+
+    <h2 id="one">列表</h2>
+    1.无序列表<br>
+    <ul>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ul>
+    2.有序列表<br>
+    <ol>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ol>
+    <dl>
+        <dt>3.自定义列表</dt>
+        <dd>列表前面没有任何的格式</dd>
+        <dd>dl是个框架，dt是项目的名字，dd是弟弟，解释项目0的。</dd>
+    </dl>
+    <dl>
+        <dt>关注我们</dt>
+        <dd>111</dd>
+        <dd>111</dd>
+        <dd>111</dd>
+    </dl>
+    <h2 id="two">表单标签</h2>
+    <dl>
+        <dt>组成</dt>
+        <dd>表单域</dd>
+        <dd>表单控件</dd>
+        <dd>提示信息</dd>
+    </dl>
+    <dl>
+        <dt>form标签，就是表单域</dt>
+        <dd>action，值是url地址，表示接受指定信息的地址</dd>
+        <dd>method，值是get/post，表单的提交方式</dd>
+        name，名字，指定表单的名称，区分一个页面的很多个表单域
+    </dl>
+    <h4>表单元素</h4>
+    <dl>
+        <dt id="three">input</dt>
+        <dd><dl>
+            <dt>type属性值</dt>
+            <dd>text：文本，用户输入文字</dd>
+            <dd>password：密码框</dd>
+            <dd>radio：单选按钮</dd>
+            <dd>checkbox:多选按钮</dd>
+            <dd>submit:定义提交按钮，会把表单内容发送到服务器</dd>
+            <dd>reset:重置按钮</dd>
+            <dd>button：按钮</dd>
+            <dd>file:文件域</dd>
+        </dl></dd>
+        <dd>
+            <dl>
+                <dt>name：属性值(用户自己定义),就是区分不同的元素的把，我理解的，区分不同的input（区分input元素名称）(给后台人员用)</dt>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>value：属性值（用户自定义），就是input元素的值（给后台人员用）placeholder更香</dt>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>checked：属性值：checked 规定单选框和复选框默认选哪个</dt>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>maxlength:属性值：正整数，规定输入字符的最大长度</dt>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt id="four">lable标签</dt>
+        <dd>使用场景：绑定表单元素，当我点击lable标签里文本是，会自动选择标签</dd>
+        <dd>用法：lable里面有个for属性值是名字，在对应标签要加上id = ”名字“</dd>
+    </dl>
+    <form action="xx.php" method="get">
+        <table >
+            <thead>
+                <tr>
+                    <th>项目</th>
+                    <th>按钮</th>
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right"><label for="name">用户名：</label></td>
+                    <td><input type="text" id="name" name="username" value="请输入您的名字" maxlength="5"></td>
+                </tr>
+                <tr>
+                    <td align="right">密码：</td>
+                    <td><input type="password" name="password" placeholder="请输入您的密码"></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="sex">性别：</label></td>
+                    <td>
+                        <label for="girl">女：</label>
+                        <input type="radio" name="sex" id="girl" value="女"> 男：<input type="radio" name="sex" value="男" checked = "checked" id="sex"></td>
+                </tr>
+                <tr>
+                    <td align="right">喜好：</td>
+                    <td>吃饭<input type="checkbox" name="like" value="吃饭"> 睡觉<input type="checkbox" name="like"> 打豆豆<input type="checkbox" name="like" checked="checked"></td>
+                </tr>
+                <tr>
+                    <td align="right">提交：</td>
+                    <td><input type="submit" value="免费注册"></td>
+                    <td>按钮上面的提交是默认写上去的文字，但是可以通过valut修改,只会把form表单域的值提交后台</td>
+                </tr>
+                <tr>
+                    <td align="right">重置：</td>
+                    <td><input type="reset" value="重新填写"></td>
+                    <td>跟submit一样，字是默认的，可以通过value来更改</td>
+                </tr>
+                <tr>
+                    <td align="right">按钮：</td>
+                    <td><input type="button" value="发送验证码"></td>
+                    <td>按钮上面的字还是通过value来更改，后期结合js搭配使用</td>
+                </tr>
+                <tr>
+                    <td align="right">文件：</td>
+                    <td><input type="file"></td>
+                    <td>上传文件</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <h4 id="five">select</h4>
+    1.selec 下拉列表（至少有一对option） selected = ”selected“默认选择<br>
+    籍贯
+    <form action="">
+        <select name="" id="">
+            <option value="1">北京</option>
+            <option value="">广东</option>
+            <option value="" selected = "selected">河北</option>
+        </select>
+    </form>
+    <h4 id="six">textarea文本域</h4>
+    反馈<br>
+
+    <textarea name="" id="" cols="30" rows="10">默认的字就是这个
+    </textarea>
+</body>
+</html>

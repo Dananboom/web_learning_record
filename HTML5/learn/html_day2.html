@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>目录</h1>
+    <a href="#excel">表格标签</a>
+
+
+    <h4 id="excel">表格标签</h4>
+    <h5>表格的主要作用</h5>
+    <p>展示数据，可读性很好</p>
+    <h5>表格的基本语法</h5>
+    <p>
+        1.表头单元格默认加粗+居中显示<br>
+        2.tr是行，td是列<br>
+        <h5>表格的属性</h5> ：（基本不用，后期根据css改）<br>
+        1. align ： left center right <br>
+        2. border ：数字或者 ""，是默认的意思，表示没有边框 <br>
+        3. cellpadding ：像素值，就是单元格边和他内容的空白，默认1px <br>
+        4. cellspacing: 像素值 就是单元格之间的空白，默认1px <br>
+        5. width ：像素值或者百分比，默认2像素 <br>
+        注意： 在table的aligh是表格相对于网页的位置，而在tr设施angle就会是文字相对表格的位置。<br>
+        <h5>表格的结构</h5>
+        1.头（thead）和身体（tbody）<br>
+
+    </p>
+    <table>
+        <tr>  
+            <th>我是表头，来呀来呀</th>
+            <td>行</td>
+            <td>列</td>
+        </tr>
+    </table>
+    <table border="1" align="center" cellpadding = "" cellspacing = "0" width = "500">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>身高</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>danan</td>
+                <td>16</td>
+                <td>190</td>
+            </tr>
+            <tr>
+                <td>wangjiang</td>
+                <td>80</td>
+                <td>150123121321321</td>
+            </tr>
+            <tr>
+                <td>tao</td>
+                <td>16</td>
+                <td>185</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>合并单元格</h4>
+    1.方式：跨行合并 rowspan ;跨列合并 colspan跨列合并
+    <table border="1" cellspacing = "0" align="center">
+        <thead>
+            <tr>
+                <th>11</th>
+                <th>11</th>
+                <th>11</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>111111111</td>
+                    <td>111111111</td>
+                    <td>111111111</td>
+                </tr>
+            <tr>
+                <td colspan="2">1111111111</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11111111111</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11111111111</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">111111</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

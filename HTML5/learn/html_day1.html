@@ -1,0 +1,127 @@
+<!-- 文档类型声明语言--document type，就是告诉浏览器用哪种HTML来渲染 他是文档类型声明标签-->
+<!DOCTYPE html> 
+<!-- lang - language 语言， en-> english zh-CN就是中文网页，定义英文也可以写中文，定义英文也可以显示英文 -->
+<!-- 就是一个警示的作用，会给网页提示要不要翻译 -->
+<html lang="en">
+<head>
+    <!-- 字符集，UTF-8 万国码；GB2312--简体中文；BIG5繁体中文；GBK简繁包含（比较老） -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一个页面</title>
+</head>
+<body>
+    <h1>目录</h1>
+    <a href="#title">标题标签</a><br>
+    <a href="#p">段落标签</a><br>
+    <a href="#chenge">换行标签</a><br>
+    <a href="#dom">文本格式化标签</a><br>
+    <a href="#overall">布局标签</a><br>
+    <a href="#img">图像标签</a><br>
+    <a href="#path">路径</a><br>
+    <a href="#link">超链接标签</a><br>
+    <a href="#ch">特殊字符</a><br>
+    
+
+    <!-- 标题标签 做标题，重要性递减-->
+    <h1 id = "title">我是h1</h1>
+    <h2>我是h2</h2>
+    <h3>我是h3</h3>
+    <h4>我是h4</h4>
+    <h5>我是h5</h5>
+    <h6>我是h6</h6>
+    <!-- 段落和换行标签 -->
+    <p id = "p">我是一个段落</p>
+    这里是演示 <br>
+    <p>王将饺子（饺子の王将，又译为饺子的王将）是一家发源于京都市、在日本全国各地都拥有分店的连锁餐厅，销售以大阪风的饺子（日式煎饺，也就是锅贴）为核心的中华料理。实际经营的幕后公司是王将食品服务（王将フードサービス），是一家总公司设于京都府京都市山科区，在大阪证券交易所挂牌的上市公司。
+    </p>
+    由于关西地区还存在一家以大阪为起源地、名称类似的中华料理连锁大阪王将，王将饺子也经常被称呼为京都王将以作为区别。</p>
+    <>
+    <!-- 换行标签 -->
+    <br id="change">break是换行的意思，<br> 这里换行了<br><br>
+    <!-- 文本格式化标签 -->
+    <h3 id="dom">文本格式化标签</h3>
+    <!-- 加粗 -->
+    我是<strong>加粗</strong>的文字
+    我是<b>加粗</b> 的文字（strong比b的语义更加的强烈）<br><br>
+    <!-- 倾斜 -->
+    我是 <em>倾斜</em>的文字
+    我是<i>倾斜</i> 的文字（em比i的语义更加的强烈）<br><br>
+    <!-- 删除 -->
+    我是<del>删除</del>标签
+    我是<s>删除</s>标签（del比s语义更强烈）<br><br>
+    <!-- 我是下划线 -->
+    我是<ins>下划线</ins>
+    我是<u>下划线</u>（ins比u语义更强烈）<br><br>
+
+    <h3 id="overall">div和span标签</h3>
+    用来布局网页，没有语义
+    <div>这是头部（div是division的缩写，就是分区的意思），我是一个div标签，我一个人占一行</div>
+    <div>这是头部（div是division的缩写，就是分区的意思），我是二个div标签，我一个人占一行</div>
+    123（不能在div后面，因为div独占一行）<br><br>
+    <span>今日价格（跨距，跨度），span一行可以放很多个，跨行显示</span>
+    <span>百度</span>
+    <span>搜狐</span>
+    <span>新浪</span>
+    
+    <h3 id="img">图像标签</h3>
+    <p>imgage</p>
+    <h4>img属性</h4>
+    <p>
+        1.src:就是路径<br>
+        2.alt:替换文本，图像显示不出来的时候用文字替换<br>
+        3.title：提示文本，就是鼠标（悬停）放到图像上提示的文字<br>
+        4.width:图像的宽度（单位：像素px）<br>
+        5.height:图片的高度（一般只改一个就行，另外一个会自己等比例缩放）<br>
+        6.border：给图像设定边框(一般会通过css来指定) <br>
+        Tips：<br>
+        1.属性之间不分先后顺序<br>
+        2.属性是键值对的形式：就是属性=“属性值”<br>
+    </p>
+    <img src="./img/1.png" alt="我是alt" title="我是提示文本" width="300" height="500" border="15">  
+    <h4 id="path">路径（重点）</h4>
+    <p>
+        1.目录文件夹和根目录（根目录就是打开文件夹最外面的一层？？？）<br>
+        2.路径<br><br>
+        相对路径：图片相对于html的位置<br>
+            1.同一级路径<br>
+            2.下一级路径  ./文件名/文件名or文件名/文件名（就是不加./也可以的意思）<br>
+            3.上一级路径  ../文件名/文件名(../就是已经返回到了上一级的目录下，就不用多此一举) <br>
+        绝对路径：<br>
+            1.在电脑中的哪个地方 (只有在自己电脑下有用) <br> <img src="C:\Users\Danan\Pictures\1.jpg" alt="损坏了吗" width="300"><br>
+            2.图片的链接 <br> <img src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1504605709,948552173&fm=26&gp=0.jpg" alt="" width="300"><br>
+    </p>
+
+    <h4 id="link">超链接标签</h4>
+    <h5>1.语法格式</h5>
+    <p>
+        属性<br>
+        1.href: 跳转目标,必须是http://www.……开头(内部链接不需要以heep开头)<br>
+        2.target：打开窗口的方式。默认的是_self 就是在当前页面打开。_blank(新的，空白的)另外开启一个窗口<br>
+        <a href="">我是一个a标签，a就是anchor的意思，是锚的意思</a><br>
+    </p>
+    <h5>链接的分类</h5>
+    <p>
+        1.外部链接<br>
+        <a href="http://www.baidu.com" target="_blank">百度</a><br>
+        2.内部链接（就是网站内部页面之间的链接）<br>
+        <a href="../HTML5/need/introduce.html" target="_blank">公司简介：</a><br>
+        3.空连接：用#代表href <br>
+        <a href="#">这是空连接</a><br>
+        4.下载链接：里面是一个文件或者是压缩包就会下载<br>
+        <a href="../need/1.zip">下载链接，exe，zip等压缩包的文件</a><br>
+        5.网页元素的链接（图片，音乐,表格等）<br>
+        <a href="http://www.baidu.com"><img src="./img/1.png" alt="我是alt" title="我是提示文本" width="300" height="500" border="15"> </a><br>
+        6.锚点链接：快速定位到页面的某个位置<br>
+        两步实现：<br>
+        step 1：在链接文本的href中 设置属性值为#名字的形式，如<!-- <a href="#two">第二集</a>； --> <br>
+        step 2：在目标位置的标签设置id属性，就等于刚才的名字<br>
+        <a href="#img">这是锚点链接，img</a>
+
+    </p>
+    <h4 id="ch">特殊字符</h4>
+    这里中间&nbsp; 有空格哦！<br>
+    大于号和小于号 &lt; &nbsp; less then 大于号 &gt;  great then；<br>
+    
+</body>
+</html>
