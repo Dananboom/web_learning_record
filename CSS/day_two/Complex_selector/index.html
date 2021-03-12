@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#one">后代选择器</a><br>
+    <a href="#two">子选择器</a><br>
+    <a href="#three">并集选择器</a><br>
+    <a href="#four">伪类选择器</a><br>
+    <h2 id="one">后代选择器</h2>
+
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子 <a href="#">我是孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+    <h2 id="two">子选择器</h2>
+    <ol>
+        <li>我们都是儿子</li>
+        <li>我们都是儿子 <a href="#">我是孙子</a></li>
+        <li>我们都是儿子</li>
+        <li>我们都是儿子</li>
+        <li>我们都是儿子</li>
+        <li>我们都是儿子</li>
+    </ol>
+    <h2 id="three">并集选择器(喜欢竖着写)</h2>
+    <div>熊大</div>
+    <p>熊二</p>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>乔治</li>
+        <li>猪妈妈</li>
+    </ul>
+    <hr>
+    <h2 id="four">伪类选择器</h2>
+
+    <dl>
+        <dt>链接伪类：</dt>
+        <dd>a：link选择所有未被访问的链接</dd>
+        <dd>a：visited选择所有已被访问的链接</dd>
+        <dd>a:hover选择鼠标指针位于其上的链接</dd>
+        <dd>a:active选择活动链接，鼠标按下为谈起的链接</dd>
+    </dl>
+    <a href="#">小猪佩奇（未访问过的链接）</a>
+    <a href="www.weizhi.com">之前访问过就会变色</a>
+    tip:
+    按照lvha顺序(lave hate) <br>
+    a在应用的时候单独指定，一般都是先改a的样式然后再hover就行<br>
+    <dl>
+        <dt>focus伪类选择器</dt>
+        <dd>用于选取获得焦点的表单元素</dd>
+        <dd>焦点就是光标</dd>
+        <dd>妙啊</dd>
+    </dl>
+    <input type="text"><input type="text"><input type="text">
+    <h1>总结</h1>
+    <table align="center" border="1" cellspacing="0">
+        <tr>
+            <th>选择器</th>
+            <th>作用</th>
+            <th>特征</th>
+            <th>使用情况</th>
+            <th>用法</th>
+        </tr>
+        <tr>
+            <th>后代</th>
+            <td>选择后代元素，可以跨很多个级别</td>
+            <td>可以选祖宗十八代</td>
+            <td>较多</td>
+            <td>空格隔开</td>
+        </tr>
+        <tr>
+            <th>子选择器</th>
+            <td>选最近的元素</td>
+            <td>只选亲生的</td>
+            <td>少</td>
+            <td>大于号 .nav>header</td>
+        </tr>
+        <tr>
+            <th>并集选择器</th>
+            <td>选择相同样式的元素</td>
+            <td>可以集体声明</td>
+            <td>较多</td>
+            <td>逗号，并且换行 p，li</td>
+        </tr>
+        <tr>
+            <th>链接伪类选择器</th>
+            <td></td>
+            <td>和链接相关</td>
+            <td>较多</td>
+            <td>改a的默认样式和hover</td>
+        </tr>
+        <tr>
+            <th>:focus选择器</th>
+            <td>选择获得光标的表单</td>
+            <td>跟表单相关</td>
+            <td>较少</td>
+            <td>input：focus</td>
+        </tr>
+    </table>
+</body>
+
+</html>

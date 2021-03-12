@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: '宋体';
+        font-size: 16px;
+    }
+    .weiruanyahei {
+        font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    }
+    .songti {
+        font-family: '宋体';
+    }
+    .changjian {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .text1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    .bold {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .no {
+        font-weight: 400;
+    }
+    .italic {
+        font-style: italic;
+    }
+    em {
+        font-style: normal;
+    }
+    div {
+        font: italic 700 16px "microsoft yahei"
+    }
+    th {
+        background-color: rgb(240, 208, 223);
+    }
+    td {
+        background-color: rgb(247, 241, 244);
+    }
+</style>
+<body>
+    <h1>字体</h1>
+    <ul>
+        <li><a href="#family">字体系列</a></li>
+        <li><a href="#size">大小</a></li>
+        <li><a href="#B">粗细</a></li>
+        <li><a href="#style">文字样式（如斜体）</a></li>
+        <li><a href="#add">字体的复合属性</a></li>
+    </ul>
+    <p id="family" class="bold">字体系列</p>
+    <p class="weiruanyahei">微软雅黑</p>
+    <p class="songti">宋体</p>
+    <p class="changjian">听说这是一个常用的字体</p>
+    <p class="text1">测试一下字体</p>
+    <p>
+        1.多个单词组合在一起的字体名字用''或”“来包裹<br>
+        2.一个fontfamily可以设置多个字体<br>
+        3.如果多个字体要用，隔开<br>
+        4.尽量用系统有的字体<br>
+        5.使用多个字体兼容性好<br>
+        6.常用字体：BODY”Microsoft YaHei“；tahoma，arial，”Hiragino Sans GB(苹果系统好用)“；
+    </p>
+    <p id="size" class="bold">字体大小</p>
+    <p>px（像素）</p>
+    <p>谷歌浏览器默认16像素，但是要明确大小，不要默认大小，标题标签要单独指定</p>
+    <p>给body font size大小</p>
+    <p id="B" class="bold">粗细</p>
+    <p>值最好用数字。normal=400；border = 700；</p>
+    <p>值后面不加px单位，就一个数字就可</p>
+    <h2 class="no">标题不加粗</h2>
+    <p class="bold" id="style">文字样式</p>
+    <p>就是字体的风格</p>
+    <p>有两个值，一个是normal（正常的）；一个是italic（倾斜的）</p>
+    <p class="italic">就是倾斜的</p>
+    <p><em>倾斜的变得不倾斜(常用)</em></p>
+    <p class="bold" id="add" >字体的复合属性</p>
+    <div>怎么办，怎么办，难道说春天就要来了</div>
+    <p>font： font-style font-weight font-size/line-height font-family（顺序）</p>
+    <p>font属性可以省略（取默认值，单数必须保留font-size和font-family属性，否则font属性将不起作用）</p>
+    <h1>小结</h1>
+    <table border="1" cellspacing = "0" align="center">
+        <tr align="center">
+            <th>属性</th>
+            <th>表示</th>
+            <th>注意点</th>
+        </tr>
+        <tr align="center">
+            <th>font-size</th>
+            <td>字号</td>
+            <td>px单位，要带上；谷歌默认是16px</td>
+        </tr>
+        <tr align="center">
+            <th>font-family</th>
+            <td>字体</td>
+            <td>对body设置</td>
+        </tr>
+        <tr align="center">
+            <th>front-weight</th>
+            <td>字体的粗细</td>
+            <td>700-加粗；400-normal；用数字不带单位</td>
+        </tr>
+        <tr align="center">
+            <th>font-style</th>
+            <td>倾斜不倾斜</td>
+            <td>有normal和italic，但是经常用把倾斜的变成不倾斜的？？？有点疑问</td>
+        </tr>
+        <tr align="center">
+            <th>front</th>
+            <td>连写（语法糖）</td>
+            <td>1.有顺序：front：font-style font-weight font-size/line-height font-family；<br> 注意不能省略size和family</td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

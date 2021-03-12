@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: brown;
+            font-size: 50 px;
+        }
+        dd {
+            color: cadetblue;
+        }
+        h5 {
+            color: pink;
+        }
+        .pink {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(219, 168, 206);
+        }
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(167, 207, 233);
+        }
+        .liu {
+            color: rosybrown;
+        }
+        .liuf {
+            font-size: 35px;
+        }
+        #pink {
+            color: rosybrown;
+        }
+        * {
+            color: rgb(1, 24, 1);
+        }
+        .tou {
+            background-color: rgb(155, 214, 208);
+            color:rgb(3, 44, 3);
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1> 目录 </h1>
+    基础选择器
+    <h4>介绍</h4>
+    <dl>
+        <dt>选择器</dt>
+        <dd>给谁改样式{改什么的样式}标签选择器</dd>
+    </dl>
+    <!--  -->
+    <p class="blue">这是一个段落,类选择器</p>
+    选择器的作用<br>
+    就是选择标签用的。<br>
+    <h3>基础选择器</h3>
+    <h5> 1.标签选择器</h5>
+    把所有一类的标签选择到，但是不能差异化设置。<br>
+    <h5>2.类选择器</h5>
+    单独选一个或者几个标签
+    在要选的标签价格class属性
+    <b>特殊使用-多类名</b><br>
+    一个标签有多个名字，在class写好多个类名
+    <h5>3.id选择器</h5>
+    #id名字开头，调用时标签里面是id = “名字”
+    id和类选择器的区别，id只能调用一次，id是在唯一的，经常和js使用
+    <h5>4.通配符选择器</h5>
+    选择页面中所有的标签，但是通过id，类，标签选择器改过样式的不在通配符选择器的范围内
+    <h1>总结</h1>
+    <table border="1" cellspacing = "0">
+        <tr align="center">
+            <th class="tou">基础选择器</th>
+            <th class="tou">作用</th>
+            <th class="tou">特点</th>
+            <th class="tou">使用情况</th>
+            <th class="tou">用法</th>
+            <th class="tou">备注</th>
+        </tr>
+        <tr align="center">
+            <th class="tou">标签选择器</th>
+            <td >可以选出来所有的相同标签</td>
+            <td >不能差异化选择</td>
+            <td >较多</td>
+            <td >p {color：red；……}</td>
+            <td >无</td>
+        </tr>
+        <tr align="center">
+            <th class="tou">类选择器</th>
+            <td >可以选出多个标签</td>
+            <td >根据需求选择</td>
+            <td >非常多</td>
+            <td >.nav {color: red;}</td>
+            <td >无</td>
+        </tr>
+        <tr align="center">
+            <th class="tou">id选择器</th>
+            <td >一次只能选一个标签</td>
+            <td >一个id在一个html文档只能出现一次，被调用一次</td>
+            <td >一般和js搭配使用</td>
+            <td >#nav {color ：red；}</td>
+            <td >无</td>
+        </tr>
+        <tr align="center">
+            <th class="tou">通配符选择器</th>
+            <td >选中所有标签，包括html，body等等</td>
+            <td >选中所有</td>
+            <td >特殊情况使用</td>
+            <td >* {color：red；}</td>
+            <td >被其他基础选择器选过了的话，通配符对其不起效果</td>
+        </tr>
+    </table>
+    <ul>
+        <li class="blue">   11111 类选择器    </li>
+        <li>   11111     </li>
+        <li>   11111     </li>
+        <li>   11111     </li>
+        <li>   11111     </li>
+        <li>   11111     </li>
+    </ul>
+    <div class="pink">类选择器</div>
+    <div class="blue">类选择器</div>
+    <div class="pink">类选择器</div>
+    <div class="blue">类选择器</div>
+    <div class="liu liuf">刘德华，类选择器</div>
+    <div id="pink">马克尔杰克逊，id选择器</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+</head>
+<style>
+    div {
+        color: violet;
+    }
+    .align1 {
+        text-align: center;
+    }
+    .decoration {
+        text-decoration: line-through;
+    }
+    .a {
+        text-decoration: none;
+    }
+    p {
+        text-indent: 2em;
+        text-height: 50px;
+    }
+    [href] {
+        color: crimson;
+    }
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+<body>
+   <ul>
+       <li><a href="#look">外观</a></li>
+       <li>
+           <ul>
+               <li><a href='color'>颜色</a></li>
+               <li><a href="align">对齐文本</a></li>
+               <li><a href="#decoration">装饰文本</a></li>
+               <li><a href="indent">文本缩进</a></li>
+               <li><a href="height">行间距</a></li>
+           </ul>
+       </li>
+   </ul>
+   <p class="title" id="color">颜色</p>
+   <div>怎么办，怎么办，难道春天就要来了</div>
+   <dl>
+       <dt>改变颜色的几种方式</dt>
+       <dd>预定的颜色值</dd>
+       <dd>十六进制（#ff000）</dd>
+       <dd>RGB值</dd>
+   </dl>
+   <p id="align" class="title">对齐文本</p>
+   <p>text-align，只能设置水平对齐方式，左对齐、右对齐、居中</p>
+   <table border="1" cellspacing="0" align="center">
+       <tr align="center">
+           <th>属性值</th>
+           <th>解释</th>
+       </tr>
+       <tr align="center">
+           <th>left</th>
+           <td>左对齐（默认）</td>
+       </tr>
+       <tr align="center">
+           <th>right</th>
+           <td>右对齐</td>
+       </tr>
+       <tr align="center">
+           <th>center</th>
+           <td>居中对齐</td>
+       </tr>
+       <h1 class="align1">居中对齐的标题</h1>
+   </table>
+   <p id="decoration" class="title">装饰文本</p>
+   下划线，删除线，上划线<br>
+   <table border="1" cellspacing="0" align="center">
+       <tr align="left">
+           <th>属性值</th>
+           <th>描述</th>
+       </tr>
+       <tr align="left">
+           <th>none</th>
+           <td>默认，最常用</td>
+       </tr>
+       <tr align="left">
+           <th>underline</th>
+           <td>下划线，链接a自带下划线</td>
+       </tr>
+       <tr align="left">
+           <th>overline</th>
+           <td>上划线</td>
+       </tr>
+       <tr align="left">
+            <th>line-through</th>
+            <td>删除</td>
+    </tr>
+   </table>
+   <div class="decoration">怎么办，怎么办，难道说春天就要来了</div>
+   <a href="#" class="a">去掉a的下划线</a>
+   <p id="indent" class="title">文本缩进</p>
+   <p>值可以是px，也可以是em，比如字体大小是16px，那么1em就是16px，2em就是16px*2，em是<b>相对</b>单位</p>
+   <p>羽生结弦，1994年12月7日出生于日本宫城县仙台市，日本花样滑冰男子单人滑选手。</p>
+   <p>   
+    2014年2月，年仅19岁的羽生结弦夺得索契冬奥会金牌，成为亚洲首位冬奥会男子单人滑冠军 [1-2]  ；3月，他夺得世界花样滑冰锦标赛冠军，实现了奥运会、世锦赛、大奖赛总决赛的大满贯 [3]  。</p>
+   <p>2016年，他在世界花样滑冰大奖赛总决赛上夺冠，实现大奖赛总决赛四连冠 [4]  。2017年4月，他再次夺得世界花样滑冰锦标赛冠军 [5]  。2018年2月，他夺得平昌冬奥会花样滑冰男子单人滑冠军，成为66年来第一位蝉联冬奥会男单冠军的花样滑冰选手 [6]  。</p>
+   <p></p>
+   <p id="height" class="title">行间距</p>
+   <p>由上下和文字本身高度组成</p>
+   <h1 align = 'center'>总结</h1>
+   <table border="1" cellspacing='0' align="center">
+       <tr align="center"> 
+           <th>属性</th>
+           <th>表示</th>
+           <th>备注</th>
+       </tr>
+       <tr align="center"> 
+           <th>color</th>
+           <td>文本颜色</td>
+           <td>十六进制常用</td>
+       </tr>
+       <tr align="center"> 
+           <th>text-align</th>
+           <td>文本对齐</td>
+           <td>左中右对齐</td>
+       </tr>
+       <tr align="center"> 
+           <th>text-indent</th>
+           <td>文本缩进</td>
+           <td>一般是2em</td>
+       </tr>
+       <tr align="center"> 
+           <th>text-decoration</th>
+           <td>文本修饰</td>
+           <td>下划线，删除线</td>
+       </tr>
+       <tr align="center"> 
+           <th>line-height</th>
+           <td>行高</td>
+           <td>无</td>
+       </tr>
+    </table>
+   
+</body>
+</html>

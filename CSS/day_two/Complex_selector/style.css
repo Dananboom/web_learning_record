@@ -1,0 +1,30 @@
+ol  a{
+    color: pink;
+}
+ol>li {
+    color: darkgrey;
+}
+div,
+p,
+.pig li {
+    color: darkred;
+}
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+a:visited {
+    color: orange;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+input:focus{
+    background-color: rgb(236, 230, 230);
+}
+th {
+    background-color: rgb(239, 239, 243);
+}

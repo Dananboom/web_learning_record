@@ -1,0 +1,16 @@
+.align {
+    text-align: center;
+}
+p {
+    text-indent: 2em;
+}
+.bold {
+    font-weight: 700;
+}
+.title {
+    font-weight: 400;
+}
+.note {
+    font-size: 14spx;
+    color: darkgrey;
+}
