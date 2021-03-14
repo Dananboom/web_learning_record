@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ol>
+        <li>什么是元素的显示模式</li>
+        <li>元素显示模式的分类</li>
+        <li>元素显示模式的转换</li>
+    </ol>
+    <dl>
+        <dt><strong>什么是显示模式</strong></dt>
+        <dd>
+            <dl>
+                <dt>块元素</dt>
+                <dd>自己独占一行</dd>
+                <dd>可以给高度和宽度</dd>
+                <dd>不给宽度就和腹肌宽度一样宽</dd>
+                <dd>是一个盒子，里面可以放行或者块级元素</dd>
+                <dd>文字类元素不能使用块元素，比如p，h</dd>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>行内元素</dt>
+                <dd>a，span等</dd>
+                <dd>一行可以写多个</dd>
+                <dd>不能设置宽高</dd>
+                <dd>默认宽度是内容的宽度</dd>
+                <dd>行元素内只能放文本或其他行内元素</dd>
+                <dd>链接里面不能放链接但是a里面放块级元素好，但是给a转换成块级元素比较安全</a></dd>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>行内块元素</dt>
+                <dd>img，input，td等</dd>
+                <dd>一行可以有多个元素，中间有空隙</dd>
+                <dd>默认宽度就是他本身的宽度（行内元素的特点）</dd>
+                <dd>高度，行高，外边距及内边距都可以控制</dd>
+            </dl>
+        </dd>
+    </dl>
+    <h5>转化</h5>
+    display：block <br>
+    例子：<a href="#" class="block">这是一个行内元素但是我要把它转化成块元素</a>
+    <div>我是个块元素</div>
+    <hr>
+    <div>我是个块元素</div>
+    <hr>
+    <span>我是一个行内元素，但要转化成行内块元素1</span>
+    <span>我是一个行内元素，但要转化成行内块元素2</span>
+
+</body>
+
+</html>

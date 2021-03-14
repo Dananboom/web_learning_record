@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <dl>
+        <dt>背景颜色（background-color）</dt>
+        <dd>transparent（默认的透明色）</dd>
+    </dl>
+    <dl>
+        <dt>背景图片（background-image）</dt>
+        <dd>none，url</dd>
+        <dd>
+            <dl>
+                <dt>背景平铺（background-repeat）</dt>
+                <dd>repea</dd>
+                <dd>no-repea</dd>
+                <dd>repea-x</dd>
+                <dd>repea-y</dd>
+                <dd>既可以有背景颜色也可以有背景图片，只不过图片会压住颜色</dd>
+            </dl>
+        </dd>
+        <dd>
+            <dl>
+                <dt>背景图片的位置（background-position）</dt>
+                <dd>参数x；</dd>
+                <dd>参数y；</dd>
+                <dd>方位名词和精确单位</dd>
+                <dd>length：百分数
+                    <dl>
+                        <dt>精确单位</dt>
+                        <dd>第一个是x坐标，第二个是y坐标</dd>
+                        <dd>如果只指定一个指，那第一个数值是x坐标，第二个是默认垂直居中的</dd>
+                    </dl>
+                </dd>
+                <dd>position：top|center|left|right（哪个在前哪个在后没有关系）(如果其中一个省略那默认就是居中)</dd>
+                <dd>混合单位（第一个值是x，第二个值是y）</dd>
+
+            </dl>
+        </dd>
+    </dl>
+    <dd>
+        <dl>
+            <dt>背景附着</dt>
+            <dd>backgr-attachment</dd>
+            <dd>视差滚动</dd>
+            <dd>scroll背景图像随着对象内容滚动</dd>
+            <dd>背景图像固定</dd>
+        </dl>
+    </dd>
+    <dd>
+        <dl>
+            <dt>背景连写</dt>
+            <dd>background：没有顺序，习惯：颜色，图片地址，平铺，滚动，位置</dd>
+        </dl>
+    </dd>
+    <dd>
+        <dl>
+            <dt>背景颜色半透明</dt>
+            <dd>background ： rgba（0，0，0，0.3），最后一个是透明度，取值在0到1，1是全透明，0是不透明</dd>
+        </dl>
+    </dd>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four">成长守护平台</div>
+    <div class="five"></div>
+    <h1>总结</h1>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>属性</th>
+            <th>作用</th>
+            <th>值</th>
+        </tr>
+        <tr>
+            <th>background-color</th>
+            <td>背景颜色</td>
+            <td>预定颜色，十六进制，rgb</td>
+        </tr>
+        <tr>
+            <th>background-image</th>
+            <td>背景图片</td>
+            <td>url</td>
+        </tr>
+        <tr>
+            <th>background-repeat</th>
+            <td>是否平铺</td>
+            <td><b>repeat</b>；no-repea；repeat-x，repeat-y</td>
+        </tr>
+        <tr>
+            <th>background-position</th>
+            <td>背景位置</td>
+            <td>length/position</td>
+        </tr>
+        <tr>
+            <th>background-attachment</th>
+            <td>背景附着</td>
+            <td><b>scroll</b>；fixed</td>
+        </tr>
+        <tr>
+            <th>背景简写</th>
+            <td></td>
+            <td>颜色；url；repeat；滚动；位置</td>
+        </tr>
+        <tr>
+            <th>背景半透明</th>
+            <td></td>
+            <td>background：rgba（0，0，0，0.1）</td>
+        </tr>
+    </table>
+</body>
+
+</html>
