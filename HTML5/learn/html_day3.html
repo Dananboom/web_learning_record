@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>目录</h1>
     <a href="#one">列表</a>
@@ -57,17 +59,19 @@
     <h4>表单元素</h4>
     <dl>
         <dt id="three">input</dt>
-        <dd><dl>
-            <dt>type属性值</dt>
-            <dd>text：文本，用户输入文字</dd>
-            <dd>password：密码框</dd>
-            <dd>radio：单选按钮</dd>
-            <dd>checkbox:多选按钮</dd>
-            <dd>submit:定义提交按钮，会把表单内容发送到服务器</dd>
-            <dd>reset:重置按钮</dd>
-            <dd>button：按钮</dd>
-            <dd>file:文件域</dd>
-        </dl></dd>
+        <dd>
+            <dl>
+                <dt>type属性值</dt>
+                <dd>text：文本，用户输入文字</dd>
+                <dd>password：密码框</dd>
+                <dd>radio：单选按钮</dd>
+                <dd>checkbox:多选按钮</dd>
+                <dd>submit:定义提交按钮，会把表单内容发送到服务器</dd>
+                <dd>reset:重置按钮</dd>
+                <dd>button：按钮</dd>
+                <dd>file:文件域</dd>
+            </dl>
+        </dd>
         <dd>
             <dl>
                 <dt>name：属性值(用户自己定义),就是区分不同的元素的把，我理解的，区分不同的input（区分input元素名称）(给后台人员用)</dt>
@@ -95,7 +99,7 @@
         <dd>用法：lable里面有个for属性值是名字，在对应标签要加上id = ”名字“</dd>
     </dl>
     <form action="xx.php" method="get">
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>项目</th>
@@ -116,11 +120,13 @@
                     <td align="right"><label for="sex">性别：</label></td>
                     <td>
                         <label for="girl">女：</label>
-                        <input type="radio" name="sex" id="girl" value="女"> 男：<input type="radio" name="sex" value="男" checked = "checked" id="sex"></td>
+                        <input type="radio" name="sex" id="girl" value="女"> 男：<input type="radio" name="sex" value="男"
+                            checked="checked" id="sex"></td>
                 </tr>
                 <tr>
                     <td align="right">喜好：</td>
-                    <td>吃饭<input type="checkbox" name="like" value="吃饭"> 睡觉<input type="checkbox" name="like"> 打豆豆<input type="checkbox" name="like" checked="checked"></td>
+                    <td>吃饭<input type="checkbox" name="like" value="吃饭"> 睡觉<input type="checkbox" name="like"> 打豆豆<input
+                            type="checkbox" name="like" checked="checked"></td>
                 </tr>
                 <tr>
                     <td align="right">提交：</td>
@@ -152,7 +158,7 @@
         <select name="" id="">
             <option value="1">北京</option>
             <option value="">广东</option>
-            <option value="" selected = "selected">河北</option>
+            <option value="" selected="selected">河北</option>
         </select>
     </form>
     <h4 id="six">textarea文本域</h4>
@@ -161,4 +167,5 @@
     <textarea name="" id="" cols="30" rows="10">默认的字就是这个
     </textarea>
 </body>
+
 </html>
