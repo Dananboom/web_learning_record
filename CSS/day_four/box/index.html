@@ -52,10 +52,41 @@
         <dd>
             <dl>
                 <dt>分开的写法</dt>
-                <dd>border-top：1px soild red</dd>
+                <dd>border-top：1px solid实线边框 red</dd>
             </dl>
         </dd>
     </dl>
+    <dl>
+        <dt>padding内边距</dt>
+        <dd>padding也会影响盒子的大小。</dd>
+        <dd>简写的方式与padding一样的</dd>
+        <dd>
+            <dl>
+                <dt>块级元素水平居中</dt>
+                <dd>盒子必须指定了宽度</dd>
+                <dd>左右外边距设置为auto</dd>
+                <dd>行内元素和行内块元素水平居中只要给他们的父亲加上text-align center就可了</dd>
+                <dd>嵌套块元素垂直外边距塌陷的问题</dd>
+                <dd>对于两个嵌套的关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会他先较大的外边距值，（父子哪个外边距大会塌陷哪个）</dd>
+                <ul>
+                    <li>为父元素定义上边框(边框颜色transparent透明)</li>
+                    <li>为父元素定义上内内边距</li>
+                    <li>为父元素添加overflow：hidden（不会改变盒子的大小）</li>
+                </ul>
+            </dl>
+        </dd>
+    </dl>
+    <dl>外边距margin</dl>
+    <dd>margin-left right top button</dd>
+    <dl>清楚内外边距</dl>
+    <dt>
+        css第一行代码
+        *{
+        margin = 0
+        padding = 0
+        }
+    </dt>
+    <dd>行内元素为了照顾兼容性尽量值设置左右内外百年据，不要设置上下内外百年据，但是转换为块级和行内块元素就可以了</dd>
     <h1>text区</h1>
     <div class="width"></div>
     <table align="center" cellspacing="0" border="1">
@@ -136,6 +167,29 @@
         <dd>简写</dd>
     </dl>
     <div class="padding">我是div</div>
+    <hr>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">微博</a>
+        <a href="#">三个字</a>
+    </div>
+    <hr>
+    <h1>padding不会撑开盒子的情况</h1>
+    <div>
+        <p>如果盒子本身没有指定width/height属性，padding不会撑开盒子大小</p>
+    </div>
+    <div class="margin margin1">1</div>
+    <div class="margin">2</div>
+    <div class="header">
+        <span>我是里面的文字</span>
+    </div>
+    <hr>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 

@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+div {
+    width: 300px;
+    height: 340px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+body {
+    background-color: rgb(245,245,245);
+}
+img {
+    width: 160px;
+    height: 160px;
+} 
+h3 {
+    font-size: 13px;
+    text-align: center;
+}
+.one {
+    font-style: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    
+}
+.two {
+    color: #ff6700;
+    font-style: 14px;
+    text-align: center;
+}
