@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <h1>定位组成</h1>
+    定位=定位模式＋边偏移<br>
+    <hr>
+    <h2>1.定位模式</h2>
+    <p>是通过psoition属性来设置的</p>
+    <table>
+        <tr>
+            <th>值</th>
+            <th>语义</th>
+        </tr>
+        <tr>
+            <th>static</th>
+            <td>静态定位</td>
+        </tr>
+        <tr>
+            <th>relative</th>
+            <td>相对定位</td>
+        </tr>
+        <tr>
+            <th>absolute</th>
+            <td>绝对定位</td>
+        </tr>
+        <tr>
+            <th>fixed</th>
+            <td>固定定位</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>2.边偏移</h2>
+    <p>边偏移就是定位盒子移动的最终位置，下面是它的属性</p>
+    <table>
+        <tr>
+            <th>边偏移属性</th>
+            <th>示例</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <th>top</th>
+            <td>top：80px</td>
+            <td><b>顶部</b>偏移量，定义元素相对于其父元素<b>上边线的距离</b></td>
+        </tr>
+        <tr>
+            <th>bottom</th>
+            <td>bottom:80px</td>
+            <td><b>底部</b>偏移量，定义元素相对于其父元素<b>下边线的距离</b></td>
+        </tr>
+        <tr>
+            <th>left</th>
+            <td>left：80px</td>
+            <td><b>左侧</b>偏移量，定义元素相对于其父元素<b>左边线的距离</b></td>
+        </tr>
+        <tr>
+            <th>right</th>
+            <td>right：80px</td>
+            <td><b>右侧</b>偏移量，定义元素相对于其父元素<b>右边线的距离</b></td>
+        </tr>
+    </table>
+    <hr>
+    <h2>各种定位方式</h2>
+    <table>
+        <tr>
+            <th>定位方式</th>
+            <th>意思</th>
+            <th>语法</th>
+            <th>注意点</th>
+        </tr>
+        <tr>
+            <th>static静态定位</th>
+            <td>就是默认定位，无定位的意思</td>
+            <td>选择器{position：static；}</td>
+            <td>
+                <ol>
+                    <li>静态定位是按照标准流特性摆放位置，它没有边偏移</li>
+                    <li>很少用到</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th>相对定位relative</th>
+            <td>相对定位是元素移动位置的时候，是相对于它原来的位置来说的（自恋型定位）</td>
+            <td>选择器{position：ralative；}</td>
+            <td>
+                <ol>
+                    <li>移动的时候参照自己原来的位置</li>
+                    <li>它移动走了以后他的位置还保留，其他盒子不会占用这个位置，后面的位置仍然以标准流形式排列</li>
+                    <li>相对定位是没有脱标的，她最典型的用用是给绝对定位当爹的</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th>绝对定位absolute</th>
+            <td>绝对定位是元素在移动位置的时候，是相对于他的祖先元素来说的（拼爹型）</td>
+            <td>选择器{position：absolute；}</td>
+            <td>
+                <ol>
+                    <li>如果没有祖先元素或者祖先元素没有定位，则以浏览器为标准定位（document文档）</li>
+                    <li>如果父亲有定位（哪种都行）就以最近一级的有定位的祖先元素为参考点移动位置。</li>
+                    <li>绝对定位脱标，他不再占有原先的位置。</li>
+                    <li><b>子绝父相</b> ，子级使用绝对定位，那么父级使用相对定位</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th>固定定位fixed</th>
+            <td>固定定位是元素固定于浏览器可视区的位置，主要使用场景：可以在浏览页面滚动时元素的位置不会改变</td>
+            <td>选择器{position：fixed}</td>
+            <td>
+                <ol>
+                    <li>是以浏览器的可视窗口为参照点移动元素的。</li>
+                    <li>脱标</li>
+                    <li><b>小技巧</b>跟随版心对齐
+                        <ul>
+                            <li>一个小的算法</li>
+                            <li>先让固定定位的盒子left：50%，走到浏览器的可视区的一半的位置</li>
+                            <li>再让固定定位的盒子margin-left：版心一半的距离，多走版心宽度一半的位置</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th>粘性定位</th>
+            <td>像是相对定位和固定定位的混合</td>
+            <td>选择器{position：sticky；top：10px}</td>
+            <td>
+                <ol>
+                    <li>以浏览器的可视窗口为参照点移动元素</li>
+                    <li>占有原先的位置</li>
+                    <li>必须加边偏移才有效</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>定位的叠放次序</h2>
+    <p>z-index</p>
+    <p>选择器{z-index；1；}</p>
+    <p>数值可以是正整数，负整数，或者是0，默认的就是auto，数值越大，盒子越靠上</p>
+    <p>如果没有指定，则谁最后写的最大</p>
+    <p>只有定位的盒子才有这个属性</p>
+    <hr>
+    <h2>定位的拓展</h2>
+    1.绝对定位的居中（不能通过margin）<br>
+    <ul>
+        <li>绝对定位的盒子left50%</li>
+        <li>margin负值左面走盒子的一半</li>
+    </ul>
+    2.绝对定位的垂直居中<br>
+    <ul>
+        <li>绝对定位的盒子top%50</li>
+        <li>margintop负值走盒子的一半</li>
+    </ul>
+    <h3>特性</h3>
+    <ul>
+        <li>
+            行内元素天界绝对定位和固定定位，如果不给宽度或者是高度，默认大小是内容的大小
+        </li>
+        <li>可以直接设置宽度和高度</li>
+        <li>脱标的盒子不会触发外边距塌陷</li>
+        <li>浮动元素只会压住下面标准流的盒子，但是不会压住文字和图片</li>
+        <li>绝对定位和固定定位会压住文字</li>
+    </ul>
+    <h1>text</h1>
+    <hr>
+    <!-- 
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <hr>
+    <div class="son">没有父元素的情况,有父亲但是没有定位和这个效果是一样的</div>
+    <hr>
+    <div class="father1">
+        <div class="son1"></div>
+    </div>
+    <div class="fix"><img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_code.jpg" alt="">
+    </div>
+    <div class="sticky"></div>
+    <div class="w"></div> -->
+
+</body>
+
+</html>

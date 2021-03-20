@@ -55,142 +55,223 @@
                 <dd>border-top：1px solid实线边框 red</dd>
             </dl>
         </dd>
-    </dl>
-    <dl>
-        <dt>padding内边距</dt>
-        <dd>padding也会影响盒子的大小。</dd>
-        <dd>简写的方式与padding一样的</dd>
         <dd>
             <dl>
-                <dt>块级元素水平居中</dt>
-                <dd>盒子必须指定了宽度</dd>
-                <dd>左右外边距设置为auto</dd>
-                <dd>行内元素和行内块元素水平居中只要给他们的父亲加上text-align center就可了</dd>
-                <dd>嵌套块元素垂直外边距塌陷的问题</dd>
-                <dd>对于两个嵌套的关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会他先较大的外边距值，（父子哪个外边距大会塌陷哪个）</dd>
-                <ul>
-                    <li>为父元素定义上边框(边框颜色transparent透明)</li>
-                    <li>为父元素定义上内内边距</li>
-                    <li>为父元素添加overflow：hidden（不会改变盒子的大小）</li>
-                </ul>
+                <dt>圆角边框</dt>
+                <dd>border-radius：length(单位可以是px，可以是百分比)</dd>
+                <dd>圆形盒子的做法。</dd>
+                <dd>1.一个正方形的盒子</dd>
+                <dd>1.border-radius：50%<（高度的一半）/dd> </dl> </dd> </dl> <dl>
+                <dt>padding内边距</dt>
+                <dd>padding也会影响盒子的大小。</dd>
+                <dd>简写的方式与padding一样的</dd>
+                <dd>圆角矩形就设置成高度的一半</dd>
+                <dd>跟两个值，三个值bulabula，还可以border-top-left-radius，border--button-right这样指定的</dd>
+                <dd>
+                    <dl>
+                        <dt>块级元素水平居中</dt>
+                        <dd>盒子必须指定了宽度</dd>
+                        <dd>左右外边距设置为auto</dd>
+                        <dd>行内元素和行内块元素水平居中只要给他们的父亲加上text-align center就可了</dd>
+                        <dd>嵌套块元素垂直外边距塌陷的问题</dd>
+                        <dd>对于两个嵌套的关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会他先较大的外边距值，（父子哪个外边距大会塌陷哪个）</dd>
+                        <ul>
+                            <li>为父元素定义上边框(边框颜色transparent透明)</li>
+                            <li>为父元素定义上内内边距</li>
+                            <li>为父元素添加overflow：hidden（不会改变盒子的大小）</li>
+                        </ul>
+                    </dl>
+                </dd>
+            </dl>
+            <dl>外边距margin</dl>
+        <dd>margin-left right top button</dd>
+        <dl>清楚内外边距</dl>
+        <dt>
+            css第一行代码
+            *{
+            margin = 0
+            padding = 0
+            }
+        </dt>
+        <dd>行内元素为了照顾兼容性尽量值设置左右内外百年据，不要设置上下内外边据，但是转换为块级和行内块元素就可以了</dd>、
+        <dd>
+            <dl>
+                <dt>盒子阴影</dt>
+                <dd>
+                    <table>
+                        <tr>
+                            <th>值</th>
+                            <th>描述</th>
+                        </tr>
+                        <tr>
+                            <th>h-shadow</th>
+                            <td>必需，水平阴影的位置，允许负值</td>
+                        </tr>
+                        <tr>
+                            <th>v-shadow</th>
+                            <td>必需，垂直阴影的位置，允许负值</td>
+                        </tr>
+                        <tr>
+                            <th>blur</th>
+                            <td>可选，模糊的距离</td>
+                        </tr>
+                        <tr>
+                            <th>spread</th>
+                            <td>可选，阴影的尺寸</td>
+                        </tr>
+                        <tr>
+                            <th>color</th>
+                            <td>可选，阴影的颜色</td>
+                        </tr>
+                        <tr>
+                            <th>inset</th>
+                            <td>可选，将外部阴影（outset改为内部阴影）默认是outside，但是不可以写</td>
+                        </tr>
+                    </table>
+                </dd>
+                <dd>写的顺序就是这个表的顺序</dd>
             </dl>
         </dd>
-    </dl>
-    <dl>外边距margin</dl>
-    <dd>margin-left right top button</dd>
-    <dl>清楚内外边距</dl>
-    <dt>
-        css第一行代码
-        *{
-        margin = 0
-        padding = 0
-        }
-    </dt>
-    <dd>行内元素为了照顾兼容性尽量值设置左右内外百年据，不要设置上下内外百年据，但是转换为块级和行内块元素就可以了</dd>
-    <h1>text区</h1>
-    <div class="width"></div>
-    <table align="center" cellspacing="0" border="1">
-        <tr>
-            <th>排名</th>
-            <th>关键词</th>
-            <th>趋势</th>
-            <th>今日搜索</th>
-            <th>最近七日</th>
-            <th>相关链接</th>
-        </tr>
-        <tr align="center">
-            <th>1</th>
-            <td>鬼吹灯</td>
-            <td></td>
-            <td>123</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>2</th>
-            <td>盗墓笔记</td>
-            <td></td>
-            <td>456</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>3</th>
-            <td>西游记</td>
-            <td><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3616232119,1116792392&fm=26&gp=0.jpg"
-                    alt="" width="10"></td>
-            <td>789</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>4</th>
-            <td>东游记</td>
-            <td></td>
-            <td>123</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>5</th>
-            <td>甄嬛传</td>
-            <td></td>
-            <td>456</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>6</th>
-            <td>水浒传</td>
-            <td></td>
-            <td>789</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <th>7</th>
-            <td>三国演义</td>
-            <td></td>
-            <td>123456</td>
-            <td>aaa</td>
-            <td><a href="http://www.baidu.com" target="_black">百度</a> &nbsp; <a href="http://github.com">github</a>
-            </td>
-        </tr>
-    </table>
-    <dl>
-        <dt>padding</dt>
-        <dd>padding-left左内边距</dd>
-        <dd>padding-right右内边距</dd>
-        <dd>padding-top上内边距</dd>
-        <dd>padding-bottom下内边距</dd>
-        <dd>值是像素</dd>
-        <dd>简写</dd>
-    </dl>
-    <div class="padding">我是div</div>
-    <hr>
-    <div class="nav">
-        <a href="#">新浪导航</a>
-        <a href="#">手机新浪网</a>
-        <a href="#">移动客户端</a>
-        <a href="#">微博</a>
-        <a href="#">三个字</a>
-    </div>
-    <hr>
-    <h1>padding不会撑开盒子的情况</h1>
-    <div>
-        <p>如果盒子本身没有指定width/height属性，padding不会撑开盒子大小</p>
-    </div>
-    <div class="margin margin1">1</div>
-    <div class="margin">2</div>
-    <div class="header">
-        <span>我是里面的文字</span>
-    </div>
-    <hr>
-    <div class="father">
-        <div class="son"></div>
-    </div>
+        <dd>
+            <dl>
+                <dt>文字阴影</dt>
+                <dd>text-shadow</dd>
+                <dd>
+                    <table>
+                        <tr>
+                            <th>值</th>
+                            <td>描述</td>
+                        </tr>
+                        <tr>
+                            <th>h-shadow</th>
+                            <td>必须，水平阴影的位置，允许负值</td>
+                        </tr>
+                        <tr>
+                            <th>v-shadow</th>
+                            <td>垂直阴影，必须，允许负值</td>
+                        </tr>
+                        <tr>
+                            <th>blur</th>
+                            <td>可选，模糊的距离</td>
+                        </tr>
+                        <tr>
+                            <th>color</th>
+                            <td>可选，阴影的颜色</td>
+                        </tr>
+                    </table>
+                </dd>
+            </dl>
+        </dd>
+        <h1>text区</h1>
+        <div class="width"></div>
+        <table align="center" cellspacing="0" border="1">
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+            <tr align="center">
+                <th>1</th>
+                <td>鬼吹灯</td>
+                <td></td>
+                <td>123</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>2</th>
+                <td>盗墓笔记</td>
+                <td></td>
+                <td>456</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>3</th>
+                <td>西游记</td>
+                <td><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3616232119,1116792392&fm=26&gp=0.jpg"
+                        alt="" width="10"></td>
+                <td>789</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>4</th>
+                <td>东游记</td>
+                <td></td>
+                <td>123</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>5</th>
+                <td>甄嬛传</td>
+                <td></td>
+                <td>456</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>6</th>
+                <td>水浒传</td>
+                <td></td>
+                <td>789</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <th>7</th>
+                <td>三国演义</td>
+                <td></td>
+                <td>123456</td>
+                <td>aaa</td>
+                <td><a href="http://www.baidu.com" target="_black">百度</a> &nbsp; <a href="http://github.com">github</a>
+                </td>
+            </tr>
+        </table>
+        <dl>
+            <dt>padding</dt>
+            <dd>padding-left左内边距</dd>
+            <dd>padding-right右内边距</dd>
+            <dd>padding-top上内边距</dd>
+            <dd>padding-bottom下内边距</dd>
+            <dd>值是像素</dd>
+            <dd>简写</dd>
+        </dl>
+        <div class="padding">我是div</div>
+        <hr>
+        <div class="nav">
+            <a href="#">新浪导航</a>
+            <a href="#">手机新浪网</a>
+            <a href="#">移动客户端</a>
+            <a href="#">微博</a>
+            <a href="#">三个字</a>
+        </div>
+        <hr>
+        <h1>padding不会撑开盒子的情况</h1>
+        <div>
+            <p>如果盒子本身没有指定width/height属性，padding不会撑开盒子大小</p>
+        </div>
+        <div class="margin margin1">1</div>
+        <div class="margin">2</div>
+        <div class="header">
+            <span>我是里面的文字</span>
+        </div>
+        <hr>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+        <div class="radius">我是圆角边框</div>
+        <div class="radius-two">我是跟了两个值，就是对角线是一个值</div>
+        <div class="shadow"></div>
+        <div>
+            <p>文字阴影</p>
+        </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>

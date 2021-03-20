@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示与隐藏</title>
+</head>
+<style>
+    .tudou {
+        position: relative;
+        width: 444px;
+        height: 320px;
+        margin: 30px auto;
+    }
+
+    .tudou img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mask {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .tudou:hover .mask {
+        display: block;
+
+    }
+</style>
+
+<body>
+    <div class="tudou">
+        <div class="mask"></div>
+        <img src="https://vthumb.ykimg.com/054101015F857345047BD7A2651D80AB" alt="">
+    </div>
+</body>
+
+</html>

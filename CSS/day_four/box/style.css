@@ -59,11 +59,7 @@ h1 {
     background-color: #cd123c;
     padding: 30px;
 }
-div {
-    width: 300px;
-    height: 100px;
-    background-color: #d8cccf;
-}
+
 div p {
     padding: 30px;
     background-color: skyblue;
@@ -99,3 +95,32 @@ div p {
     background-color: #ac1;
     margin-top: 100px;
 }
+.radius {
+    height: 200px;
+    width: 300px;
+    background-color: #a157;
+    margin-top: 20px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 200px;
+}
+.radius-two {
+    height: 300px;
+    width: 200px;
+    background-color: rgb(15, 12, 12);
+    color: cornsilk;
+    border-radius: 10px 40px ;
+}
+.shadow {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: 100px auto;
+    
+}
+.shadow:hover {
+box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+ div p {
+     text-shadow:10px 10px rgba(0, 0, 0, 0.3);
+ }

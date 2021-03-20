@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>传统网页布局的三种方式</h1>
+    <ul>
+        <li>普通流</li>
+        <li>浮动</li>
+        <li>定位</li>
+    </ul>
+    <table>
+        <tr>
+            <th colspan="2">浮动：选择器{float：属性值}</th>
+        </tr>
+        <tr>
+            <th>属性值</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <th>none</th>
+            <td>元素不浮动（默认）</td>
+        </tr>
+        <tr>
+            <th>left</th>
+            <td>元素向<strong>左</strong>浮动</td>
+        </tr>
+        <tr>
+            <th>right</th>
+            <td>元素向<strong>右</strong>浮动</td>
+        </tr>
+    </table>
+
+
+    <div class="left">左青龙</div>
+    <div class="right">右白虎</div>
+    <h2>浮动特性</h2>
+    <ul>
+        <li>浮动元素会脱离标准流</li>
+        <li>浮动的元素会一行内显示并元素的顶部对齐</li>
+        <li>浮动元素会有行内块元素的特性</li>
+    </ul>
+    <h3>脱标</h3>
+    <ul>
+        <li>脱离普通流的控制,移动到主动位置</li>
+        <li>浮动盒子不再保留原先的位置（让其他的标准流占用）（叠加的效果）</li>
+    </ul>
+    <h3>浮动的元素会一行内显示并元素的顶部对齐</h3>
+    <h3>浮动元素会有行内块元素的特性</h3>
+    <ul>
+        <li>
+            如果块级盒子没有设置宽度，默认宽度就和父级一样宽，但是添加浮动后它的大小由内容来决定
+        </li>
+        <li>浮动盒子中间没有缝隙，是挨在一起的</li>
+    </ul>
+    <h2>浮动元素经常和标准流的父级元素一起搭配使用</h2>
+    <h2>注意</h2>
+    <ul>
+        <li>一浮全浮</li>
+    </ul>
+    <h2>不给父盒子高度？（清除浮动）</h2>
+    原理：闭合浮动<br>
+    <table>
+        <tr>
+            <th>属性值</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <th>left</th>
+            <td>清楚左侧浮动的影响</td>
+        </tr>
+        <tr>
+            <th>right</th>
+            <td>清除右侧浮动带来的影响</td>
+        </tr>
+        <tr>
+            <th>both</th>
+            <td><em>同时清除左右两侧带来的影响</em></td>
+        </tr>
+    </table>
+    <h4>清除浮动的方法</h4>
+    <ul>
+        <li>额外标签法(找到最后一个浮动盒子，在其后设置一个空标签【空标签必须是块级元素】，class调用clear)(要增加很多无意义的标签，结构性差0)</li>
+        <li>父级添加overflow属性(父级元素加一句overflow：hidden)但无法显示溢出部分</li>
+        <li>父级添加：after伪元素<br>
+            [.clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            }
+            .clearfix {
+            /*IE6,7专有*/
+            *zoom: 1;
+            }]
+        </li>
+        <li>父级添加伪元素 <br>
+            [.clearfix:before,
+            .clearfix:after {
+            content: "";
+            display: table;
+
+            }
+            .clearfix:after {
+            clear: both;
+            }
+            .clearfix {
+            *zoom: 1;
+            }]
+        </li>
+    </ul>
+    <h2>常见图片格式</h2>
+    <ul>
+        <li>jpg 色彩保留好产品类图片多用</li>
+        <li>gif，透明背景和动图</li>
+        <li>结合gif和jpg有点，透明背景</li>
+        <li>psd：Photoshop的文件</li>
+    </ul>
+    <h2>css书写顺序</h2>
+    <ul>
+        <li>布局定位属性：display；position；float；clear；visibility；overflow</li>
+        <li>自身属性：width；height；margin；padding；bodder；background：</li>
+        <li>文本属性：color；font；text-decoration；text-align；vertical-align</li>
+        <li>其他属性：content；cursor；border-radius；box-shadow；text-shadow；</li>
+    </ul>
+    <h2>页面布局思路</h2>
+    <ol>
+        <li>确认版心</li>
+        <li>分析页面中的模块</li>
+        <li>先制作html结构，再写代码</li>
+    </ol>
+    <div class="box clearfix">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

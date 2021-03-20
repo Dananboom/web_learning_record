@@ -1,0 +1,63 @@
+.box {
+    width: 1226px;
+    height: 420px;
+    background-color: pink;
+    margin: 0 auto;
+}
+.left {
+    height: 420px;
+    width: 230px;
+    background-color: purple;
+    float: left;
+}
+.right {
+    width: 996px;
+    height: 420px;
+    background-color: skyblue;
+    float: left;
+}
+/*案例2*/
+.box2 {
+    width: 1226px;
+    height: 285px;
+    background-color: pink;
+    margin: 0 auto;
+}
+.box2 li {
+    float: left;
+    width: 296px;
+    height: 285px;
+    background-color: skyblue;
+    margin-right: 14px;
+    list-style: none;
+}
+.box2 .last {
+    margin-right: 0;
+}
+/*案例3*/
+.box3 {
+    width: 1226px;
+    height: 615px;
+    background-color: pink;
+    margin: 0 auto;
+}
+.left3 {
+    height: 615px;
+    width: 234px;
+    background-color: yellow;
+    float: left;
+}
+.right3 {
+    width: 992px;
+    height: 615px;
+    background-color: lightgreen;
+    float: left;
+}
+.right3>div {
+    float: left;
+    width: 234px;
+    height: 300px;
+    background-color: lightblue;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
