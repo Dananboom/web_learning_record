@@ -1,0 +1,135 @@
+{
+  "id": "2434333",
+  "name": "nintendo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20452169",
+      "name": "Down",
+      "font_class": "Down",
+      "unicode": "e8f9",
+      "unicode_decimal": 59641
+    },
+    {
+      "icon_id": "10591741",
+      "name": "数据十字_图形对象_jurassic",
+      "font_class": "jurassic_data-cross",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "5802479",
+      "name": "放大镜",
+      "font_class": "Magnifier",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6639347",
+      "name": "nintendo-01",
+      "font_class": "nintendo-",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "16751115",
+      "name": "nintendo-switch",
+      "font_class": "nintendo-switch",
+      "unicode": "ef12",
+      "unicode_decimal": 61202
+    },
+    {
+      "icon_id": "20451962",
+      "name": "heart-Fill",
+      "font_class": "heart-Fill",
+      "unicode": "e8de",
+      "unicode_decimal": 59614
+    },
+    {
+      "icon_id": "20451968",
+      "name": "message-Fill",
+      "font_class": "message-Fill",
+      "unicode": "e8df",
+      "unicode_decimal": 59615
+    },
+    {
+      "icon_id": "20451979",
+      "name": "message-problem-Fill",
+      "font_class": "message-problem-Fill",
+      "unicode": "e8e0",
+      "unicode_decimal": 59616
+    },
+    {
+      "icon_id": "20452006",
+      "name": "question-Fill",
+      "font_class": "question-Fill",
+      "unicode": "e8e4",
+      "unicode_decimal": 59620
+    },
+    {
+      "icon_id": "20452045",
+      "name": "star-Fill",
+      "font_class": "star-Fill",
+      "unicode": "e8eb",
+      "unicode_decimal": 59627
+    },
+    {
+      "icon_id": "20452062",
+      "name": "user-Fill",
+      "font_class": "user-Fill",
+      "unicode": "e8ee",
+      "unicode_decimal": 59630
+    },
+    {
+      "icon_id": "20452238",
+      "name": "heart",
+      "font_class": "heart",
+      "unicode": "e903",
+      "unicode_decimal": 59651
+    },
+    {
+      "icon_id": "20452247",
+      "name": "Left",
+      "font_class": "Left",
+      "unicode": "e904",
+      "unicode_decimal": 59652
+    },
+    {
+      "icon_id": "20452286",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e908",
+      "unicode_decimal": 59656
+    },
+    {
+      "icon_id": "20452295",
+      "name": "question",
+      "font_class": "question",
+      "unicode": "e90a",
+      "unicode_decimal": 59658
+    },
+    {
+      "icon_id": "20452297",
+      "name": "Right",
+      "font_class": "Right",
+      "unicode": "e90c",
+      "unicode_decimal": 59660
+    },
+    {
+      "icon_id": "20452347",
+      "name": "Up",
+      "font_class": "Up",
+      "unicode": "e912",
+      "unicode_decimal": 59666
+    },
+    {
+      "icon_id": "20452386",
+      "name": "message-talk",
+      "font_class": "message-talk",
+      "unicode": "e91a",
+      "unicode_decimal": 59674
+    }
+  ]
+}

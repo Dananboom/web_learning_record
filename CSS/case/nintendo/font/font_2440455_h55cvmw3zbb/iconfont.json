@@ -1,0 +1,37 @@
+{
+  "id": "2440455",
+  "name": "apps",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1527872",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "3507006",
+      "name": "ins",
+      "font_class": "ins",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11479802",
+      "name": "youtube",
+      "font_class": "youtube",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "11479805",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}

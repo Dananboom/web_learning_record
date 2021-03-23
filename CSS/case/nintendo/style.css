@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /*IE6,7专有*/
+    *zoom: 1;
+}
+/*wrapper*/
+.logo {
+    float: left;
+    width: 140px;
+    height: 54px;
+    background-color: #E60012;
+}
+.logo span {
+    width: 100px;
+    height: 40px;
+    font-size: 60px;
+    margin-left: 30px;  
+    color: seashell;
+}
+
+.sign-in {
+    float: right;
+    width: 132px;
+    height: 54px;
+}
+.icon-sign-in {
+    width: 20px;
+    height: 18px;
+    line-height: 54px;
+}
+.wish-list {
+    float: right;
+    width: 95px;
+    height: 54px;
+    line-height: 54px;
+}
+.support {
+    float: right;
+    width: 87px;
+    height: 54px;
+    line-height: 54px;
+}
+.wapper a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+    margin-left: 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.search {
+    display: inline-block;
+    margin-left: 30px;
+}
+.input {
+    float: left;
+    line-height: 54px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #484848;
+}
+.left {
+    float: left;
+    line-height: 54px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #484848;
+}
+
+.wapper {
+    overflow: hidden;
+}
+
+/*nav*/
+.nav {
+    display: block;
+    list-style: none;
+    height: 39px;
+    border-top: 1px solid #4b454575;
+    border-bottom: 1px solid #4b454575;
+    font-weight: 700;
+}
+.nav li {
+    float: left;
+    margin-left: 14px;
+    font-size: 14px;
+    color: #484848;
+    line-height: 39px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+.bar .text {
+    float: left;
+    color: #484848;
+    font-size: 28px;
+    line-height: 44px;
+}
+.bar .button {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 141px;
+    height: 44px;
+    background-color: #E60012;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin: 0 auto;
+}
+
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.button:hover .mask {
+    display: block;
+}
+/*这里是想做一点就变大，不会
+.button:hover .button {
+    width: 145px;
+    height: 48px;
+}*/
+.bar {
+    margin-top: 24px;
+    overflow: hidden;
+}
+/*分割线*/
+.rule {
+    width: 100%;
+    height: 80px;
+}
+.rule-two {
+    margin: 0 auto;
+    width: 1270px;
+    height: 80px;
+    border-top: 1px solid #484848;
+}
+/*tiles*/
+.load-img img {
+    
+    width: 100%;
+    height: 100%;
+}
+.tiles {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 17%;
+    height: auto;
+    padding: 0 17px;
+    /*大问题！窗口缩小以后就被挤下去了*/
+}
+.tiles h3 {
+    color: #484848;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tiles .load-content{
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(230, 0, 18);
+    padding: 10px;
+}
+
+/*container*/
+.container {
+    width: 85%;background-color: #D50110;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container-content {
+    float: left;
+    width: 500px;
+    height: 75px;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    
+}
+.container .switch {
+    float: left;
+    width: 300px;
+    height: 195px;
+}
+.container .iconfont {
+    font-size: 158px;
+    text-indent: 0.5em;
+    color: rgb(172, 0, 12);
+}
+.container-content .one {
+    margin: 0 auto;
+}
+.container .button {
+    float: right;
+    margin-right: 25px;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    color: white;
+}
+.container .button .button-content {
+    padding: 20px 35px;
+    background-color:rgb(148, 0, 12);
+}
+.container .button .button-content .iconfont {
+    font-size: 25px;
+    color: white;
+}
+/*callout*/
+.callout-title {
+    width: 85%;
+    margin: 0 auto;
+    color: #484848;
+    font-size: 50px;
+}
+.system-callout {
+    width: 85%;
+    margin: 28px 0;
+}
+.system-callout img {
+    width: 85%;
+    height: auto;
+}
+.system-callout .content{
+    margin: 0 auto;
+    width: 85%;
+}
+.system-callout .content .txt {
+    float: left;
+    font-size: 28px;
+    color: #484848;
+    margin-top: 25px;
+    text-align: center;
+}
+.system-callout .content .button {
+    float: left;
+    width: 250px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: rgb(172, 0, 13);
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 18px;
+}
+.system-callout .content .button .iconfont {
+    color: white;
+}
+/*news-list*/
+.load-content-two .iconfont{
+    color: #E60012;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.callout-title-two {
+    margin-bottom: 28px;
+}
+.news-list {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-left: 65px;
+}
+.news-list .news-img img {
+    width: 100%;
+    height: auto;
+}
+.news-box {
+    width: 85%;
+    margin-left: 65px;
+}
+.date {
+    margin-top:25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #484848;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.news-list h3 {
+    color: #484848;
+    margin-bottom: 25px;
+}
+.news-list p {
+    color: #484848;
+    font-size: 16px;
+    font-family: monospace;
+}
+.news-content {
+    display: block;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #E60012;
+}
+.news-box-two {
+    width: 80%;
+    margin-left: 95px;
+}
+.news-list-two {
+    float: left;
+    width: 19%;
+    height: auto;
+    margin: 25px;
+}
+.news-list-two img {
+    width: 100%;
+    height: auto;
+}
+.news-list-two h3 {
+    color: #484848;
+}
+.content-two {
+    width: 450px;
+    height: 50px;
+    background-color: #E60012;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.callout-title .button-important{
+    font-size: 15px !important;
+    color: #E60012 !important;
+}
+/*footer-top*/
+.footer-top-content {
+    width: 80%;
+    margin-left: 115px;
+    font-size: 12px;
+    color: #484848;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+.footer-top {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.footer-top .about {
+    float: left;
+    color: #484848;
+    width: auto;
+    list-style: none;
+    margin: 0 14px;
+}
+.footer-top {
+    font-size: 16px;
+    color: #484848;
+    font-family: monospace;
+
+}
+
+.footer-top .about .weight {
+    font-weight: 700;
+    font-size: 18px;
+}
+.flag-h {
+    margin-left: 115px;
+}
+.flag {
+    float: left;
+    line-height: inherit;
+    color: #484848;
+    font-weight: 700;
+}
+.flag-h span {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    height: 12px;
+    width: 16px;
+    background-image: url(../nintendo/img/6.png);
+    background-repeat: no-repeat;
+    
+}
+/*footer*/
+.footer {
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    margin-top: 30px;
+}
+.footer .footer-img {
+    margin-left: 500px;
+}
+.footer .footer-img .left .top {
+    color: white;
+}
+.footer .footer-img .left .bottom .iconfont{
+    font-size: 40px;
+    color: white;
+}
+.footer .footer-img .left {
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.footer .footer-img .img {
+    float: left;
+}
+.footer .footer-txt {
+    font-size: 12px;
+    font-family: monospace;
+    color: white;
+    padding-bottom: 15px;
+    padding-left: 300px;
+}
