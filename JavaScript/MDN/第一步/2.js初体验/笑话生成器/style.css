@@ -1,0 +1,11 @@
+label {
+    font-weight: bold;
+}
+p {
+    display: inline-block;
+    background-color: cornsilk;
+    visibility: hidden;
+}
+body {
+    width: 350px;
+}
