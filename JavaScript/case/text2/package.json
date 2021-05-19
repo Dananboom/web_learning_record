@@ -1,0 +1,17 @@
+{
+  "name": "text2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "keypress": "^0.2.1",
+    "lodash": "^4.17.21",
+    "mime": "^2.5.2",
+    "save": "^2.4.0"
+  }
+}
