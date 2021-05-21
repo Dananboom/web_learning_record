@@ -5,6 +5,7 @@ const readline = require('readline')
 
 const mime = require('mime')
 
+//http服务
 const server = http.createServer(function(req, res){
     try{
         res.writeHead(200, {
@@ -21,6 +22,7 @@ server.listen(8000)
 console.log('服务已启动')
 console.log('http://localhost:8000')
 
+//重启
 process.on('message', (m) => {
     if(m === 'reload'){
         server.close(()=>{
