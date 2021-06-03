@@ -1,4 +1,4 @@
-const Bunner = function(){
+const Bunner = function(dom, imgs){
     function createSlide(){
         const slide = document.createElement('div')
         slide.style.position = 'absolute'
