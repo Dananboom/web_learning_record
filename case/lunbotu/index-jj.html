@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bunner"></div>
+    <button onclick="bunner.play()">播放</button>
+    <button onclick="bunner.stop()">暂停</button>
+    <button onclick="bunner.prev()">上一张</button>
+    <button onclick="bunner.next()">下一张</button>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bunner {
+        height: 36vw;
+        width: 100vw;
+    }
+</style>
+<script src='./banner-jj.js'></script>
+<script>
+    const bunner = new Bunner(
+        document.querySelector('.bunner'),
+        [
+            './photo/1.jpg',
+            './photo/2.jpg',
+            './photo/3.jpg',
+            './photo/4.jpg',
+            './photo/5.jpg'
+        ]
+    )
+</script>
+
+</html>

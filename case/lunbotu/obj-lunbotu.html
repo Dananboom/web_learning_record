@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bunner"></div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bunner {
+        height: 36vw;
+        width: 100vw;
+    }
+</style>
+<script src="./obj-lunbotu.js"></script>
+<script>
+    const bunner = new Bunner(
+        document.querySelector('.bunner'),
+        [
+            'https://www.nintendo.co.jp/top/img/switch_ringfit_210601_A_l.jpg',
+            'https://www.nintendo.co.jp/top/img/switch_gameProgramming_210506_l.png',
+            'https://www.nintendo.co.jp/top/img/switch_marioGolf_210512_l.jpg',
+            'https://www.nintendo.co.jp/top/img/switch_zelda_skywardSword_210519_l.jpg',
+            'https://www.nintendo.co.jp/top/img/switch_mhst2_210526_l.jpg'
+        ]
+    )
+
+    bunner.play()
+</script>
+
+</html>
