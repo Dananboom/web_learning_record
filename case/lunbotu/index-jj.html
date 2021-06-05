@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div class="bunner"></div>
-    <button onclick="bunner.play()">播放</button>
-    <button onclick="bunner.stop()">暂停</button>
-    <button onclick="bunner.prev()">上一张</button>
-    <button onclick="bunner.next()">下一张</button>
+    <div class="banner"></div>
+    <button onclick="banner.play()">播放</button>
+    <button onclick="banner.stop()">暂停</button>
+    <button onclick="banner.prev()">上一张</button>
+    <button onclick="banner.next()">下一张</button>
 </body>
 <style>
     * {
@@ -21,21 +21,22 @@
         padding: 0;
     }
 
-    .bunner {
+    .banner {
         height: 36vw;
         width: 100vw;
     }
 </style>
 <script src='./banner-jj.js'></script>
 <script>
-    const bunner = new Bunner(
-        document.querySelector('.bunner'),
+    const banner = new Banner(
+        document.querySelector('.banner'),
         [
-            './photo/1.jpg',
-            './photo/2.jpg',
-            './photo/3.jpg',
-            './photo/4.jpg',
-            './photo/5.jpg'
+            "https://www.nintendo.co.jp/top/img/switch_ringfit_210601_A_l.jpg",
+            "https://www.nintendo.co.jp/top/img/switch_gameProgramming_210506_l.png",
+            "https://www.nintendo.co.jp/top/img/switch_marioGolf_210512_l.jpg",
+            "https://www.nintendo.co.jp/top/img/switch_zelda_skywardSword_210519_l.jpg",
+            "https://www.nintendo.co.jp/top/img/switch_mhst2_210526_l.jpg",
+            "https://www.nintendo.co.jp/top/img/switch_ringfit_210601_A_l.jpg",
         ]
     )
 </script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+<style>
+    .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: #00b0e0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+</style>
+<script>
+    const move = new Move(document.querySelector('.box1'))
+
+    function Move(dom) {
+        console.log('aaa')
+        dom.onmousedown = function () {
+            dom.onmousemove = function (e) {
+                this.style.left = e.clientX + "px"
+                this.style.top = e.clientY + "px"
+            }
+            dom.onmouseup = function () {
+                dom.onmousemove = null
+            }
+        }
+    }
+</script>
+
+</html>

@@ -1,89 +1,60 @@
-const Bunner = function(){
-    function createSlide(){
+const Banner = function() {
+    function creatSlide() {
         const slide = document.createElement('div')
-        slide.style.position = 'absolute'
-        slide.style.left = '0'
-        slide.style.top = '0'
         slide.style.height = '100%'
+        slide.style.position = 'absolute'
+        slide.style.top = '0'
+        slide.style.left = '0'
         slide.style.display = 'flex'
         return slide
     }
-    
-    function bindImages(slide, imgs, width){
+    function bindImgs (imgs, slide, width) {
         const newImgs = [...imgs, imgs[0]]
-        newImgs.forEach(url => {
+        newImgs.forEach (url => {
             const img = document.createElement('img')
             img.src = url
             img.style.width = width + 'px'
             slide.appendChild(img)
         })
     }
-    
-    return function(dom, imgs){
+    return function(dom, imgs) {
         dom.style.position = 'relative'
         dom.style.overflow = 'hidden'
-    
-        this.slide = createSlide() 
-        bindImages(this.slide, imgs, dom.offsetWidth)
-        dom.appendChild(this.slide)
-    
-        this.index = 0
+        const slide = creatSlide()
+        dom.appendChild(slide)
+        bindImgs(imgs, slide, dom.offsetWidth)
+
         this.length = imgs.length
+        this.index = 0
         this.width = dom.offsetWidth
     }
 }()
 
-Bunner.prototype.next = function(speed = 1){
-    if(this.index === this.length){
+Banner.prototype.next = function() {
+    const initial = this.slide.offsetLeft
+    if(this.index == this.length) {
         this.index = 0
         this.slide.style.left = 0 + 'px'
     }
     this.index++
-    const initial = this.slide.offsetLeft
     let left = 0
-    const timer = setInterval(()=>{
-        left += Math.ceil((this.width - left) / 50 * speed)
-        if(left >= this.width){
+    
+    const timer = setInterval(()=> {
+        left += 10
+        if(left >= this.width) {
             clearInterval(timer)
             this.slide.style.left = (initial - this.width) + 'px'
         } else {
-            this.slide.style.left = (initial - left) + 'px'
+            this.slide.style.left = (initiial - left) + 'px'
         }
-    },1)
+    }, 1)
 }
 
-Bunner.prototype.prev = function(speed = 1){
-    if(this.index === 0){
-        this.index = this.length
-        this.slide.style.left = -this.length * this.width + 'px'
-    }
-    this.index--
-    const initial = this.slide.offsetLeft
-    let left = 0
-    const timer = setInterval(()=>{
-        left += Math.ceil((this.width - left) / 50 * speed)
-        if(left >= this.width){
-            clearInterval(timer)
-            this.slide.style.left = (initial + this.width) + 'px'
-        } else {
-            this.slide.style.left = (initial + left) + 'px'
-        }
-    },1)
-}
-
-Bunner.prototype.play = function(time = 1000){
-    if(this.timer){
+Banner.prototype.play = function () {
+    if(this.timer) {
         clearInterval(this.timer)
     }
-    this.timer = setInterval(() => {
+    setInterval(()=> {
         this.next()
-    }, time)
+    }, 1500)
 }
-
-Bunner.prototype.stop = function(){
-    if(this.timer){
-        clearInterval(this.timer)
-    }
-    this.timer = null
-}
-
